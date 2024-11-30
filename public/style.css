@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding: 50px;
+    color: white;
+    background: black;
+}
+.btn-container button{
+    border: none;
+    background-color: rgb(25, 25, 148);
+    color: white;
+    padding: 20px;
+    font-size: 25px;border-radius: 20px;
+    cursor: pointer;
+}
+.btn-container button:hover{
+    opacity: 0.8;
+}
+.container{
+    text-align: center;
+    width: max-content;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.start-container{
+    color: rgb(255, 255, 255);
+}
+section img{
+    background-color: white;
+    border: 10px solid yellow;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+<link rel="stylesheet" href="ejsstyle.css">
+<body class="result-body">
+    <form action="/back" method="get">
+        <div class="result-holder">
+            <h1>Score Board</h1><hr>
+    
+            <h2>Correct       : <%= right %></h2>
+            <h2>Incorrect     : <%= wrong %></h2>
+            <h2>Skipped : <%= not %></h2>
+            <h2>
+                <% if(right == "5" || right == "6" || right == "7"){ %>
+                    Well Played☺️☺️
+                <% }else if(right == "8" || right == "9"){ %>
+                    Fantastic🎉🎉
+                <% }else if(right == "10"){ %>
+                    You nailed it🤩😎
+                <% }else if(right == "4" || right == "3"){ %>
+                    Tried your best👋
+                <% }else if(not == "0" || wrong == "0"){ %>
+                        Do it again⬅️ 
+                <% } else{%>
+                    Keep it up👍👍
+                <% } %>
+            </h2>
+            <button type="submit" id="back-btn" type="submit">Back⬅️</button>
+        </div>
+    </form>
+</body>
+</html>

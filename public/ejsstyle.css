@@ -1,0 +1,131 @@
+body{
+    /* background: rgb(246, 199, 31); */
+    /* rgb(232, 139, 17) */
+    /* background: linear-gradient(orangered,white,rgb(11, 132, 11)); */
+    /* background-color: rgb(42, 83, 187); */
+    /* background: linear-gradient(rgb(127, 163, 255),rgb(21, 57, 148)); */
+    background: linear-gradient(to bottom right, rgb(127, 163, 255), rgb(21, 57, 148), rgb(5, 42, 115));
+
+    padding: 20px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    
+}
+label{
+    font-size: 23px;
+    font-weight: 500;
+}
+.heading{
+    display: flex;
+    justify-content: space-between;
+}
+.heading img{
+    border-radius: 40px;
+}
+.submit-btn{
+    background-color: navy;
+    color: white;
+    border: 2px solid navy;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.next-btn{
+    background-color: rgb(97, 185, 34);
+    color: white;
+    border: 2px solid rgb(97, 185, 34);
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+    column-gap : 10px;
+    padding: 20px;
+}
+.container{
+    /* width: 50%; */
+    border: 1px solid;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color:mintcream;
+    border-radius: 20px;
+    gap: 10px;
+    /* box-shadow: 0.4px 2px 5px 5px; */
+}
+.body-element{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.result-container{
+    display: none;
+}
+.result-body{
+    height: 100vh;
+    /* background: linear-gradient(lightblue,blue,black); */
+     background: darkblue;
+     color: white;
+     padding-top: 100px;
+}
+.result-holder{
+    text-align: center;
+    height: 400px;
+    width: 250px;
+    border: 10px solid yellow;
+    border-style: double;
+    margin: auto;
+    border-radius: 40px;
+}
+.result-holder h2{
+    text-align: left;
+    padding-left: 40px;
+}
+#back-btn{
+    width: 90%;
+    background-color: rgb(18, 164, 213);
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    border: 5px solid white;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+    
+}
+#back-btn:hover{
+    opacity: 0.8;
+}
+hr{
+    border: 2px solid yellow;
+}
+.question {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+input[type="radio"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: 2px solid navy;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+input[type="radio"]:checked {
+    background-color: navy;
+}
+.quiz-container {
+    background-color: lightyellow;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgb(200, 200, 200); 
+}
